@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blockchain.BlockChainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-11T08:57:12" hostname="MacBook-Air.local" time="0.019">
+<testsuite name="blockchain.BlockChainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-25T09:39:27" hostname="MacBook-Air.local" time="0.043">
   <properties/>
-  <testcase name="should_survive_reflection_access" classname="blockchain.BlockChainTest" time="0.019"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="should_survive_reflection_access" classname="blockchain.BlockChainTest" time="0.043"/>
+  <system-out><![CDATA[Block:
+Id: 1
+Timestamp: 1595669967150
+Magic number: -7234213729363454763
+Hash of the previous block: 
+0
+Hash of the block: 
+c895b808dee05a502e84ba7a7b261fa8227c9b21dc2b143b3486412f335266b7
+Block was generating for 0 seconds
+
+Block:
+Id: 2
+Timestamp: 1595669967170
+Magic number: 8261089668465041922
+Hash of the previous block: 
+c895b808dee05a502e84ba7a7b261fa8227c9b21dc2b143b3486412f335266b7
+Hash of the block: 
+a6ce68dee8285940d0a6a9257be82588f583b9b0252fc4e380df87c1595384b8
+Block was generating for 0 seconds
+
+Block:
+Id: 3
+Timestamp: 1595669967174
+Magic number: 8529488878341637553
+Hash of the previous block: 
+a6ce68dee8285940d0a6a9257be82588f583b9b0252fc4e380df87c1595384b8
+Hash of the block: 
+af2798c96802223e821a53ef1b1f810a7dd976ca1a5f21eee7ade857091e4337
+Block was generating for 0 seconds
+
+Block:
+Id: 4
+Timestamp: 1595669967176
+Magic number: 4952104024138678396
+Hash of the previous block: 
+af2798c96802223e821a53ef1b1f810a7dd976ca1a5f21eee7ade857091e4337
+Hash of the block: 
+4643421288dcb05d36278cff86ae16fe88ee31178a947fbcd97484bc8a9f3a6a
+Block was generating for 0 seconds
+
+Block:
+Id: 5
+Timestamp: 1595669967179
+Magic number: -2227847846134084857
+Hash of the previous block: 
+4643421288dcb05d36278cff86ae16fe88ee31178a947fbcd97484bc8a9f3a6a
+Hash of the block: 
+a3f787a7251c824ff38951ab19c7e1ba18f7f48edc5f5883d4192f8464bd2db6
+Block was generating for 0 seconds
+
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

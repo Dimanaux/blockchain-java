@@ -77,7 +77,7 @@ public class BlockChain {
         if (blocks.size() > 0) {
             return blocks.get(blocks.size() - 1).hash();
         } else {
-            return secureHashBeginning();
+            return "0";
         }
     }
 
