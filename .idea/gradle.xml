@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/Problems/Burgers" />
             <option value="$PROJECT_DIR$/Problems/Clock factory" />
             <option value="$PROJECT_DIR$/Problems/Composite numbers" />
+            <option value="$PROJECT_DIR$/Problems/Convert to byte array" />
             <option value="$PROJECT_DIR$/Problems/Create an euphonious word" />
             <option value="$PROJECT_DIR$/Problems/Distance" />
             <option value="$PROJECT_DIR$/Problems/Find X" />
@@ -38,9 +39,11 @@
             <option value="$PROJECT_DIR$/Problems/Robot factory" />
             <option value="$PROJECT_DIR$/Problems/Seconds between two time points" />
             <option value="$PROJECT_DIR$/Problems/Seconds since start of a day" />
+            <option value="$PROJECT_DIR$/Problems/Serializable user" />
             <option value="$PROJECT_DIR$/Problems/Some hours and minutes ago" />
             <option value="$PROJECT_DIR$/Problems/Static factory methods for Time" />
             <option value="$PROJECT_DIR$/Problems/Subtracting hours and adding minutes" />
+            <option value="$PROJECT_DIR$/Problems/The Range class" />
             <option value="$PROJECT_DIR$/Problems/The angle between vectors" />
             <option value="$PROJECT_DIR$/Problems/The first and the last day of a month" />
             <option value="$PROJECT_DIR$/Problems/The last day of a month" />
