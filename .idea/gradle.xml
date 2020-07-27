@@ -17,8 +17,10 @@
             <option value="$PROJECT_DIR$/Problems/Clock factory" />
             <option value="$PROJECT_DIR$/Problems/Composite numbers" />
             <option value="$PROJECT_DIR$/Problems/Convert to byte array" />
+            <option value="$PROJECT_DIR$/Problems/Count elements of an array in another one" />
             <option value="$PROJECT_DIR$/Problems/Create an euphonious word" />
             <option value="$PROJECT_DIR$/Problems/Distance" />
+            <option value="$PROJECT_DIR$/Problems/Expression closure" />
             <option value="$PROJECT_DIR$/Problems/Find X" />
             <option value="$PROJECT_DIR$/Problems/Find all mondays" />
             <option value="$PROJECT_DIR$/Problems/Generating passwords" />
@@ -28,11 +30,13 @@
             <option value="$PROJECT_DIR$/Problems/Laptop factory" />
             <option value="$PROJECT_DIR$/Problems/Laptop store" />
             <option value="$PROJECT_DIR$/Problems/Liquid pressure" />
+            <option value="$PROJECT_DIR$/Problems/Max of two integers" />
             <option value="$PROJECT_DIR$/Problems/Merging date-time instances" />
             <option value="$PROJECT_DIR$/Problems/Motor static factory" />
             <option value="$PROJECT_DIR$/Problems/Palindrome" />
             <option value="$PROJECT_DIR$/Problems/Phone factory" />
             <option value="$PROJECT_DIR$/Problems/Pow" />
+            <option value="$PROJECT_DIR$/Problems/Production of all numbers in the range" />
             <option value="$PROJECT_DIR$/Problems/Rehashing" />
             <option value="$PROJECT_DIR$/Problems/Removing" />
             <option value="$PROJECT_DIR$/Problems/Robot" />

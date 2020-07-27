@@ -269,7 +269,7 @@ topics:
     theory_id: 9699
   - title: Functional data processing with streams
     theory_id: 3582
-  - title: Filtering elements
+  - title: Stream filtering
     theory_id: 3578
   - title: Map and flatMap
     theory_id: 3568

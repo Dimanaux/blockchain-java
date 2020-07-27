@@ -39,3 +39,7 @@ content:
 - Convert to byte array
 - Serializable user
 - The Range class
+- Max of two integers
+- Expression closure
+- Production of all numbers in the range
+- Count elements of an array in another one
