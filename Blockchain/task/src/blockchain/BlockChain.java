@@ -1,44 +1,52 @@
 package blockchain;
 
-import java.util.*;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.StringJoiner;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class BlockChain {
-    private final List<Block> blocks = new ArrayList<>();
-    private final int security;
-    private final Supplier<Long> magicNumberSupplier;
-    private final Consumer<String> logger;
+    private final ArrayList<Block> blocks = new ArrayList<>();
+    private final Object lock = new Object();
+    private final AtomicInteger security = new AtomicInteger(0);
 
-    /**
-     * @param security            the number of zeroes in the beginning of hash of
-     *                            each block required to create a block.
-     * @param magicNumberSupplier generator of magic number
-     */
-    public BlockChain(int security, Supplier<Long> magicNumberSupplier, Consumer<String> logger) {
-        this.security = security;
-        this.magicNumberSupplier = magicNumberSupplier;
-        this.logger = logger;
-    }
-
-    public BlockChain(int security) {
-        this(security, (new Random())::nextLong, System.out::println);
-    }
-
-    public void createBlock() {
-        long id = id();
-        long startTime = System.currentTimeMillis();
-        Block block = insecureBlock(id, magicNumberSupplier.get());
-        while (!block.hash().startsWith(secureHashBeginning())) {
-            block = insecureBlock(id, magicNumberSupplier.get());
+    public boolean add(Block block) {
+        synchronized (lock) {
+            if (isValid(block)) {
+                adjustSecurity(block.getTimestamp());
+                return blocks.add(block);
+            } else {
+                return false;
+            }
         }
-        long endTime = System.currentTimeMillis();
-        logBlock(block, startTime, endTime);
-        blocks.add(block);
     }
 
-    public boolean isValid() {
+    public int blocksCount() {
+        return blocks.size();
+    }
+
+    public int security() {
+        return security.get();
+    }
+
+    private void adjustSecurity(long timestamp) {
+        if (blocks.isEmpty()) {
+            security.incrementAndGet();
+            return;
+        }
+        long lastBlockCreationTime = timestamp - blocks.get(blocks.size() - 1).getTimestamp();
+        if (lastBlockCreationTime > 60_000) {
+            security.decrementAndGet();
+        } else if (lastBlockCreationTime < 10_000) {
+            security.incrementAndGet();
+        }
+    }
+
+    private boolean isValid(Block block) {
         Iterator<Block> iterator = blocks.iterator();
+        if (!iterator.hasNext()) {
+            return true;
+        }
         Block previousBlock = iterator.next();
         while (iterator.hasNext()) {
             Block currentBlock = iterator.next();
@@ -47,47 +55,26 @@ public class BlockChain {
             }
             previousBlock = currentBlock;
         }
-        return true;
+        return block.hash().startsWith("0".repeat(security.get()))
+                && previousBlock.isPreviousOf(block);
     }
 
     @Override
     public String toString() {
         StringJoiner joiner = new StringJoiner("\n");
-        blocks.forEach(block -> joiner.add(block.toString()));
+        synchronized (lock) {
+            blocks.forEach(block -> joiner.add(block.toString()));
+        }
         return joiner.toString();
     }
 
-    private Block insecureBlock(long id, long magicNumber) {
-        return new Block(id, now(), lastBlockHash(), magicNumber);
-    }
-
-    private void logBlock(Block block, long startTime, long endTime) {
-        String message = String.format(
-                "%s\nBlock was generating for %s seconds\n",
-                block, (endTime - startTime) / 1000
-        );
-        logger.accept(message);
-    }
-
-    private String secureHashBeginning() {
-        return "0".repeat(security);
-    }
-
-    private String lastBlockHash() {
-        if (blocks.size() > 0) {
-            return blocks.get(blocks.size() - 1).hash();
-        } else {
-            return "0";
+    public String lastBlockHash() {
+        synchronized (lock) {
+            if (blocks.size() > 0) {
+                return blocks.get(blocks.size() - 1).hash();
+            } else {
+                return "0";
+            }
         }
     }
-
-    private static long now() {
-        return new Date().getTime();
-    }
-
-    private static long id() {
-        return BlockChain.id++;
-    }
-
-    private static long id = 1;
 }

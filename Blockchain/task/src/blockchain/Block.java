@@ -5,16 +5,19 @@ public class Block {
     private final long timestamp;
     private final String previousBlockHash;
     private final long magicNumber;
+    private final String payload;
 
     public Block(
             long id, long timestamp,
             String previousBlockHash,
-            long magicNumber
+            long magicNumber,
+            String payload
     ) {
         this.id = id;
         this.timestamp = timestamp;
         this.previousBlockHash = previousBlockHash;
         this.magicNumber = magicNumber;
+        this.payload = payload;
     }
 
     public boolean isPreviousOf(Block other) {
@@ -27,19 +30,26 @@ public class Block {
 
     private String hashSource() {
         return String.format(
-                "%s.%s.%s.%s",
-                id, timestamp, previousBlockHash, magicNumber
+                "%s.%s.%s.%s.%s",
+                id, timestamp, previousBlockHash,
+                magicNumber, payload
         );
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Block:\nId: %d\nTimestamp: %d\n" +
+                "Block:\n%s\n" +
+                        "Id: %d\n" +
+                        "Timestamp: %d\n" +
                         "Magic number: %d\n" +
                         "Hash of the previous block: \n%s\n" +
                         "Hash of the block: \n%s",
-                id, timestamp, magicNumber, previousBlockHash, hash()
+                payload, id, timestamp, magicNumber, previousBlockHash, hash()
         );
+    }
+
+    public long getTimestamp() {
+        return timestamp;
     }
 }

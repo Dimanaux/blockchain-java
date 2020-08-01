@@ -246,6 +246,13 @@ files:
 - name: src/blockchain/BlockFactory.java
   visible: true
   learner_created: true
+- name: src/blockchain/Miner.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/273/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/50/stages/273/implement">JetBrains
+    Academy</a>
+  time: Sat, 01 Aug 2020 11:35:41 UTC
 record: 3

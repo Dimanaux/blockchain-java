@@ -1,16 +1,23 @@
 package blockchain;
 
-import java.util.Scanner;
+import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter how many zeros the hash must start with: ");
-        int security = scanner.nextInt();
-
-        BlockChain blockChain = new BlockChain(security);
-        for (int i = 0; i < 5; i++) {
-            blockChain.createBlock();
+    public static void main(String[] args) throws InterruptedException {
+        BlockChain blockChain = new BlockChain();
+        BlockFactory blockFactory = new BlockFactory(
+                (new Random())::nextLong,
+                System.out::println,
+                blockChain
+        );
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+        for (int i = 0; i < 4; i++) {
+            executorService.submit(new Miner(i, blockFactory));
         }
+        executorService.shutdown();
+        executorService.awaitTermination(10, TimeUnit.SECONDS);
     }
 }
