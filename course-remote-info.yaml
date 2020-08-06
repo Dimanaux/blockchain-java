@@ -155,8 +155,6 @@ topics:
   1:
   - title: The concept of patterns
     theory_id: 3611
-  - title: Computer programming
-    theory_id: 8739
   - title: What are streams
     theory_id: 5533
   - title: Hierarchy of exceptions

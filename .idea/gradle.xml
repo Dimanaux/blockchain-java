@@ -17,11 +17,13 @@
             <option value="$PROJECT_DIR$/Problems/Apply function to all elements" />
             <option value="$PROJECT_DIR$/Problems/Ascending and descending sorting" />
             <option value="$PROJECT_DIR$/Problems/Bad words detecting" />
+            <option value="$PROJECT_DIR$/Problems/Breakfast Decorator" />
             <option value="$PROJECT_DIR$/Problems/Burgers" />
             <option value="$PROJECT_DIR$/Problems/Calculate the number of distinct characters" />
             <option value="$PROJECT_DIR$/Problems/Check if a number is prime" />
             <option value="$PROJECT_DIR$/Problems/Check whether a number is prime" />
             <option value="$PROJECT_DIR$/Problems/Clock factory" />
+            <option value="$PROJECT_DIR$/Problems/Coffee Decorator" />
             <option value="$PROJECT_DIR$/Problems/Comparing numbers" />
             <option value="$PROJECT_DIR$/Problems/Composite numbers" />
             <option value="$PROJECT_DIR$/Problems/Convert numbers to days" />
@@ -38,6 +40,7 @@
             <option value="$PROJECT_DIR$/Problems/Find the seed" />
             <option value="$PROJECT_DIR$/Problems/Generating passwords" />
             <option value="$PROJECT_DIR$/Problems/Heron's formula" />
+            <option value="$PROJECT_DIR$/Problems/How many date-time pairs match the range" />
             <option value="$PROJECT_DIR$/Problems/Implementing the EntrySet method" />
             <option value="$PROJECT_DIR$/Problems/Is the date between the two other dates?" />
             <option value="$PROJECT_DIR$/Problems/Javadoc comment" />
@@ -51,6 +54,7 @@
             <option value="$PROJECT_DIR$/Problems/Multithreaded counter" />
             <option value="$PROJECT_DIR$/Problems/Palindrome" />
             <option value="$PROJECT_DIR$/Problems/Phone factory" />
+            <option value="$PROJECT_DIR$/Problems/Pizza Decorator" />
             <option value="$PROJECT_DIR$/Problems/Pow" />
             <option value="$PROJECT_DIR$/Problems/Production of all numbers in the range" />
             <option value="$PROJECT_DIR$/Problems/Rehashing" />
