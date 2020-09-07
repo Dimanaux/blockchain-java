@@ -1,16 +1,16 @@
 package blockchain;
 
+import blockchain.blocks.Block;
+
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class BlockFactory {
     private final Supplier<Long> magicNumberSupplier;
-    private final Consumer<String> logger;
     private final BlockChain blockChain;
 
-    public BlockFactory(Supplier<Long> magicNumberSupplier, Consumer<String> logger, BlockChain blockChain) {
+    public BlockFactory(Supplier<Long> magicNumberSupplier, BlockChain blockChain) {
         this.magicNumberSupplier = magicNumberSupplier;
-        this.logger = logger;
         this.blockChain = blockChain;
     }
 
@@ -55,11 +55,6 @@ public class BlockFactory {
         } else {
             message += "N was decreased by " + secDiff + "\n";
         }
-        logger.accept(message);
-    }
-
-    private Block insecureBlock(long id, long magicNumber, String previousBlockHash, String payload) {
-        return new Block(id, now(), previousBlockHash, magicNumber, payload);
     }
 
     private String secureHashBeginning(int security) {

@@ -1,6 +1,235 @@
 type: edu
 custom_name: stage3
 files:
+- name: src/blockchain/Hex.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Hex {
+        private final byte[] bytes;
+
+        public Hex(byte[] bytes) {
+            this.bytes = bytes;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder hexString = new StringBuilder();
+            for (byte elem : bytes) {
+                hexString.append(byteToHex(elem));
+            }
+            return hexString.toString();
+        }
+
+        private static String byteToHex(byte bits) {
+            String hex = Integer.toHexString(0xff & bits);
+            return hex.length() < 2 ? "0" + hex : hex;
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Main.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter how many zeros the hash must start with: ");
+            int security = scanner.nextInt();
+
+            BlockChain blockChain = new BlockChain(security);
+            for (int i = 0; i < 5; i++) {
+                blockChain.createBlock();
+            }
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Sha256.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.nio.charset.StandardCharsets;
+    import java.security.MessageDigest;
+    import java.security.NoSuchAlgorithmException;
+
+    public class Sha256 {
+        private final String string;
+
+        public Sha256(String string) {
+            this.string = string;
+        }
+
+        @Override
+        public String toString() {
+            return new Hex(
+                    digest(string.getBytes(StandardCharsets.UTF_8))
+            ).toString();
+        }
+
+        private static byte[] digest(byte[] bytes) {
+            return sha256().digest(bytes);
+        }
+        private static MessageDigest sha256() {
+            try {
+                return MessageDigest.getInstance("SHA-256");
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+                throw new RuntimeException(e);
+            }
+        }
+    }
+  learner_created: false
+- name: src/blockchain/BlockChain.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.*;
+    import java.util.function.Consumer;
+    import java.util.function.Supplier;
+
+    public class BlockChain {
+        private final List<Block> blocks = new ArrayList<>();
+        private final int security;
+        private final Supplier<Long> magicNumberSupplier;
+        private final Consumer<String> logger;
+
+        /**
+         * @param security            the number of zeroes in the beginning of hash of
+         *                            each block required to create a block.
+         * @param magicNumberSupplier generator of magic number
+         */
+        public BlockChain(int security, Supplier<Long> magicNumberSupplier, Consumer<String> logger) {
+            this.security = security;
+            this.magicNumberSupplier = magicNumberSupplier;
+            this.logger = logger;
+        }
+
+        public BlockChain(int security) {
+            this(security, (new Random())::nextLong, System.out::println);
+        }
+
+        public void createBlock() {
+            long id = id();
+            long startTime = System.currentTimeMillis();
+            Block block = insecureBlock(id, magicNumberSupplier.get());
+            while (!block.hash().startsWith(secureHashBeginning())) {
+                block = insecureBlock(id, magicNumberSupplier.get());
+            }
+            long endTime = System.currentTimeMillis();
+            logBlock(block, startTime, endTime);
+            blocks.add(block);
+        }
+
+        public boolean isValid() {
+            Iterator<Block> iterator = blocks.iterator();
+            Block previousBlock = iterator.next();
+            while (iterator.hasNext()) {
+                Block currentBlock = iterator.next();
+                if (!previousBlock.isPreviousOf(currentBlock)) {
+                    return false;
+                }
+                previousBlock = currentBlock;
+            }
+            return true;
+        }
+
+        @Override
+        public String toString() {
+            StringJoiner joiner = new StringJoiner("\n");
+            blocks.forEach(block -> joiner.add(block.toString()));
+            return joiner.toString();
+        }
+
+        private Block insecureBlock(long id, long magicNumber) {
+            return new Block(id, now(), lastBlockHash(), magicNumber);
+        }
+
+        private void logBlock(Block block, long startTime, long endTime) {
+            String message = String.format(
+                    "%s\nBlock was generating for %s seconds\n",
+                    block, (endTime - startTime) / 1000
+            );
+            logger.accept(message);
+        }
+
+        private String secureHashBeginning() {
+            return "0".repeat(security);
+        }
+
+        private String lastBlockHash() {
+            if (blocks.size() > 0) {
+                return blocks.get(blocks.size() - 1).hash();
+            } else {
+                return "0";
+            }
+        }
+
+        private static long now() {
+            return new Date().getTime();
+        }
+
+        private static long id() {
+            return BlockChain.id++;
+        }
+
+        private static long id = 1;
+    }
+  learner_created: false
+- name: src/blockchain/Block.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Block {
+        private final long id;
+        private final long timestamp;
+        private final String previousBlockHash;
+        private final long magicNumber;
+
+        public Block(
+                long id, long timestamp,
+                String previousBlockHash,
+                long magicNumber
+        ) {
+            this.id = id;
+            this.timestamp = timestamp;
+            this.previousBlockHash = previousBlockHash;
+            this.magicNumber = magicNumber;
+        }
+
+        public boolean isPreviousOf(Block other) {
+            return other.previousBlockHash.equals(hash());
+        }
+
+        public String hash() {
+            return new Sha256(hashSource()).toString();
+        }
+
+        private String hashSource() {
+            return String.format(
+                    "%s.%s.%s.%s",
+                    id, timestamp, previousBlockHash, magicNumber
+            );
+        }
+
+        @Override
+        public String toString() {
+            return String.format(
+                    "Block:\nId: %d\nTimestamp: %d\n" +
+                            "Magic number: %d\n" +
+                            "Hash of the previous block: \n%s\n" +
+                            "Hash of the block: \n%s",
+                    id, timestamp, magicNumber, previousBlockHash, hash()
+            );
+        }
+    }
+  learner_created: false
 - name: test/BlockchainTest.java
   visible: false
   text: |
@@ -228,31 +457,12 @@ files:
         }
     }
   learner_created: false
-- name: src/blockchain/Hex.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Main.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Sha256.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/BlockChain.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Block.java
+- name: src/blockchain/Miner.java
   visible: true
   learner_created: true
 - name: src/blockchain/BlockFactory.java
   visible: true
   learner_created: true
-- name: src/blockchain/Miner.java
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/273/implement
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/50/stages/273/implement">JetBrains
-    Academy</a>
-  time: Sat, 01 Aug 2020 11:35:41 UTC
-record: 3
+record: 2

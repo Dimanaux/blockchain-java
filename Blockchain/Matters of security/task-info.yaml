@@ -1,6 +1,339 @@
 type: edu
 custom_name: stage5
 files:
+- name: src/blockchain/Hex.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Hex {
+        private final byte[] bytes;
+
+        public Hex(byte[] bytes) {
+            this.bytes = bytes;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder hexString = new StringBuilder();
+            for (byte elem : bytes) {
+                hexString.append(byteToHex(elem));
+            }
+            return hexString.toString();
+        }
+
+        private static String byteToHex(byte bits) {
+            String hex = Integer.toHexString(0xff & bits);
+            return hex.length() < 2 ? "0" + hex : hex;
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Main.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.Random;
+    import java.util.concurrent.ExecutorService;
+    import java.util.concurrent.Executors;
+    import java.util.concurrent.TimeUnit;
+
+    public class Main {
+        public static void main(String[] args) throws InterruptedException {
+            BlockChain blockChain = new BlockChain();
+            BlockFactory blockFactory = new BlockFactory(
+                    (new Random())::nextLong,
+                    System.out::println,
+                    blockChain
+            );
+            ExecutorService executorService = Executors.newFixedThreadPool(4);
+            for (int i = 0; i < 4; i++) {
+                executorService.submit(new Miner(i, blockFactory));
+            }
+            executorService.shutdown();
+            executorService.awaitTermination(10, TimeUnit.SECONDS);
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Sha256.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.nio.charset.StandardCharsets;
+    import java.security.MessageDigest;
+    import java.security.NoSuchAlgorithmException;
+
+    public class Sha256 {
+        private final String string;
+
+        public Sha256(String string) {
+            this.string = string;
+        }
+
+        @Override
+        public String toString() {
+            return new Hex(
+                    digest(string.getBytes(StandardCharsets.UTF_8))
+            ).toString();
+        }
+
+        private static byte[] digest(byte[] bytes) {
+            return sha256().digest(bytes);
+        }
+        private static MessageDigest sha256() {
+            try {
+                return MessageDigest.getInstance("SHA-256");
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+                throw new RuntimeException(e);
+            }
+        }
+    }
+  learner_created: false
+- name: src/blockchain/BlockChain.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.ArrayList;
+    import java.util.Iterator;
+    import java.util.StringJoiner;
+    import java.util.concurrent.atomic.AtomicInteger;
+
+    public class BlockChain {
+        private final ArrayList<Block> blocks = new ArrayList<>();
+        private final Object lock = new Object();
+        private final AtomicInteger security = new AtomicInteger(0);
+
+        public boolean add(Block block) {
+            synchronized (lock) {
+                if (isValid(block)) {
+                    adjustSecurity(block.getTimestamp());
+                    return blocks.add(block);
+                } else {
+                    return false;
+                }
+            }
+        }
+
+        public int blocksCount() {
+            return blocks.size();
+        }
+
+        public int security() {
+            return security.get();
+        }
+
+        private void adjustSecurity(long timestamp) {
+            if (blocks.isEmpty()) {
+                security.incrementAndGet();
+                return;
+            }
+            long lastBlockCreationTime = timestamp - blocks.get(blocks.size() - 1).getTimestamp();
+            if (lastBlockCreationTime > 60_000) {
+                security.decrementAndGet();
+            } else if (lastBlockCreationTime < 10_000) {
+                security.incrementAndGet();
+            }
+        }
+
+        private boolean isValid(Block block) {
+            Iterator<Block> iterator = blocks.iterator();
+            if (!iterator.hasNext()) {
+                return true;
+            }
+            Block previousBlock = iterator.next();
+            while (iterator.hasNext()) {
+                Block currentBlock = iterator.next();
+                if (!previousBlock.isPreviousOf(currentBlock)) {
+                    return false;
+                }
+                previousBlock = currentBlock;
+            }
+            return block.hash().startsWith("0".repeat(security.get()))
+                    && previousBlock.isPreviousOf(block);
+        }
+
+        @Override
+        public String toString() {
+            StringJoiner joiner = new StringJoiner("\n");
+            synchronized (lock) {
+                blocks.forEach(block -> joiner.add(block.toString()));
+            }
+            return joiner.toString();
+        }
+
+        public String lastBlockHash() {
+            synchronized (lock) {
+                if (blocks.size() > 0) {
+                    return blocks.get(blocks.size() - 1).hash();
+                } else {
+                    return "0";
+                }
+            }
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Block.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Block {
+        private final long id;
+        private final long timestamp;
+        private final String previousBlockHash;
+        private final long magicNumber;
+        private final String payload;
+
+        public Block(
+                long id, long timestamp,
+                String previousBlockHash,
+                long magicNumber,
+                String payload
+        ) {
+            this.id = id;
+            this.timestamp = timestamp;
+            this.previousBlockHash = previousBlockHash;
+            this.magicNumber = magicNumber;
+            this.payload = payload;
+        }
+
+        public boolean isPreviousOf(Block other) {
+            return other.previousBlockHash.equals(hash());
+        }
+
+        public String hash() {
+            return new Sha256(hashSource()).toString();
+        }
+
+        private String hashSource() {
+            return String.format(
+                    "%s.%s.%s.%s.%s",
+                    id, timestamp, previousBlockHash,
+                    magicNumber, payload
+            );
+        }
+
+        @Override
+        public String toString() {
+            return String.format(
+                    "Block:\n%s\n" +
+                            "Id: %d\n" +
+                            "Timestamp: %d\n" +
+                            "Magic number: %d\n" +
+                            "Hash of the previous block: \n%s\n" +
+                            "Hash of the block: \n%s",
+                    payload, id, timestamp, magicNumber, previousBlockHash, hash()
+            );
+        }
+
+        public long getTimestamp() {
+            return timestamp;
+        }
+    }
+  learner_created: false
+- name: src/blockchain/BlockFactory.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.util.function.Consumer;
+    import java.util.function.Supplier;
+
+    public class BlockFactory {
+        private final Supplier<Long> magicNumberSupplier;
+        private final Consumer<String> logger;
+        private final BlockChain blockChain;
+
+        public BlockFactory(Supplier<Long> magicNumberSupplier, Consumer<String> logger, BlockChain blockChain) {
+            this.magicNumberSupplier = magicNumberSupplier;
+            this.logger = logger;
+            this.blockChain = blockChain;
+        }
+
+        public boolean createBlock(String payload) {
+            long id = blockChain.blocksCount() + 1;
+            long startTime = System.currentTimeMillis();
+            int security = blockChain.security();
+            String previousBlockHash = blockChain.lastBlockHash();
+
+            Block block;
+            do {
+                if (!blockChain.lastBlockHash().equals(previousBlockHash)) {
+                    return false;
+                }
+                block = insecureBlock(id, magicNumberSupplier.get(), previousBlockHash, payload);
+            } while (!block.hash().startsWith(secureHashBeginning(security)));
+
+            long endTime = System.currentTimeMillis();
+            synchronized (this) {
+                boolean added = blockChain.add(block);
+                if (added) {
+                    logBlock(block, startTime, endTime, blockChain.security() - security);
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public int blocksCount() {
+            return blockChain.blocksCount();
+        }
+
+        private void logBlock(Block block, long startTime, long endTime, int secDiff) {
+            String message = String.format(
+                    "%s\nBlock was generating for %s seconds\n",
+                    block, (endTime - startTime) / 1000
+            );
+            if (secDiff > 0) {
+                message += "N was increased to " + blockChain.security() + "\n";
+            } else if (secDiff == 0) {
+                message += "N stays the same\n";
+            } else {
+                message += "N was decreased by " + secDiff + "\n";
+            }
+            logger.accept(message);
+        }
+
+        private Block insecureBlock(long id, long magicNumber, String previousBlockHash, String payload) {
+            return new Block(id, now(), previousBlockHash, magicNumber, payload);
+        }
+
+        private String secureHashBeginning(int security) {
+            return "0".repeat(security);
+        }
+
+        private static long now() {
+            return System.currentTimeMillis();
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Miner.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Miner implements Runnable {
+        private final BlockFactory blockFactory;
+        private final int id;
+
+        public Miner(int id, BlockFactory blockFactory) {
+            this.blockFactory = blockFactory;
+            this.id = id;
+        }
+
+        @Override
+        public void run() {
+            while (blockFactory.blocksCount() < 5) {
+                blockFactory.createBlock(
+                        "Created by miner # " + id
+                );
+            }
+        }
+    }
+  learner_created: false
 - name: test/BlockchainTest.java
   visible: false
   text: |

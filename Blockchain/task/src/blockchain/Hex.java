@@ -8,7 +8,7 @@ public class Hex {
     }
 
     @Override
-    public String toString() {
+    public Stwwring toString() {
         StringBuilder hexString = new StringBuilder();
         for (byte elem : bytes) {
             hexString.append(byteToHex(elem));

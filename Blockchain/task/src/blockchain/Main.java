@@ -10,7 +10,6 @@ public class Main {
         BlockChain blockChain = new BlockChain();
         BlockFactory blockFactory = new BlockFactory(
                 (new Random())::nextLong,
-                System.out::println,
                 blockChain
         );
         ExecutorService executorService = Executors.newFixedThreadPool(4);

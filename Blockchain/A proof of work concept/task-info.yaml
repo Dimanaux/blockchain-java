@@ -1,6 +1,189 @@
 type: edu
 custom_name: stage2
 files:
+- name: src/blockchain/Main.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Main {
+        public static void main(String[] args) {
+            BlockChain blockChain = new BlockChain();
+            for (int i = 0; i < 5; i++) {
+                blockChain.createBlock();
+            }
+
+            blockChain.forEach(System.out::println);
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Sha256.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.nio.charset.StandardCharsets;
+    import java.security.MessageDigest;
+    import java.security.NoSuchAlgorithmException;
+
+    public class Sha256 {
+        private final String string;
+
+        public Sha256(String string) {
+            this.string = string;
+        }
+
+        @Override
+        public String toString() {
+            return new Hex(
+                    digest(string.getBytes(StandardCharsets.UTF_8))
+            ).toString();
+        }
+
+        private static byte[] digest(byte[] bytes) {
+            return sha256().digest(bytes);
+        }
+        private static MessageDigest sha256() {
+            try {
+                return MessageDigest.getInstance("SHA-256");
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+                throw new RuntimeException(e);
+            }
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Hex.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Hex {
+        private final byte[] bytes;
+
+        public Hex(byte[] bytes) {
+            this.bytes = bytes;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder hexString = new StringBuilder();
+            for (byte elem : bytes) {
+                hexString.append(byteToHex(elem));
+            }
+            return hexString.toString();
+        }
+
+        private static String byteToHex(byte bits) {
+            String hex = Integer.toHexString(0xff & bits);
+            return hex.length() < 2 ? "0" + hex : hex;
+        }
+    }
+  learner_created: false
+- name: src/blockchain/Block.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Block {
+        private final int id;
+        private final long timestamp;
+        private final String previousBlockHash;
+
+        public Block(int id, long timestamp, String previousBlockHash) {
+            this.id = id;
+            this.timestamp = timestamp;
+            this.previousBlockHash = previousBlockHash;
+        }
+
+        public boolean isPreviousOf(Block other) {
+            return other.previousBlockHash.equals(hash());
+        }
+
+        private String hash = "";
+
+        public String hash() {
+            if (hash.isEmpty()) {
+                hash = new Sha256(hashSource()).toString();
+            }
+            return hash;
+        }
+
+        private String hashSource() {
+            return String.format("%s.%s.%s", id, timestamp, previousBlockHash);
+        }
+
+        @Override
+        public String toString() {
+            return String.format(
+                    "Block:\nId: %d\nTimestamp: %d\n" +
+                            "Hash of the previous block: \n%s\n" +
+                            "Hash of the block: \n%s\n",
+                    id, timestamp, previousBlockHash, hash()
+            );
+        }
+    }
+  learner_created: false
+- name: src/blockchain/BlockChain.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import org.jetbrains.annotations.NotNull;
+
+    import java.util.*;
+
+    public class BlockChain implements Iterable<Block> {
+        final List<Block> blocks = new ArrayList<>();
+
+        public Block createBlock() {
+            Block block = new Block(id(), now(), previousBlockHash);
+            blocks.add(block);
+            previousBlockHash = block.hash();
+            return block;
+        }
+
+        public boolean isValid() {
+            Iterator<Block> iterator = blocks.iterator();
+            Block previousBlock = iterator.next();
+            while (iterator.hasNext()) {
+                Block currentBlock = iterator.next();
+                if (!previousBlock.isPreviousOf(currentBlock)) {
+                    return false;
+                }
+                previousBlock = currentBlock;
+            }
+            return true;
+        }
+
+
+        @NotNull
+        @Override
+        public Iterator<Block> iterator() {
+            return blocks.iterator();
+        }
+
+        @Override
+        public String toString() {
+            StringJoiner joiner = new StringJoiner("\n");
+            blocks.forEach(block -> joiner.add(block.toString()));
+            return joiner.toString();
+        }
+
+        private static long now() {
+            return new Date().getTime();
+        }
+
+        private static int id() {
+            int id = BlockChain.id;
+            BlockChain.id++;
+            return id;
+        }
+
+        private static int id = 1;
+        private static String previousBlockHash = "0";
+    }
+  learner_created: false
 - name: test/BlockchainTest.java
   visible: false
   text: |
@@ -233,28 +416,6 @@ files:
         }
     }
   learner_created: false
-- name: src/blockchain/Hex.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Main.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Sha256.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/BlockChain.java
-  visible: true
-  learner_created: true
-- name: src/blockchain/Block.java
-  visible: true
-  learner_created: true
-- name: test/blockchain/BlockChainTest.java
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/272/implement
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/50/stages/272/implement">JetBrains
-    Academy</a>
-  time: Sat, 25 Jul 2020 09:39:27 UTC
-record: 2
+record: 1
