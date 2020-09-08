@@ -1,64 +1,80 @@
 package blockchain;
 
-import blockchain.blocks.Block;
+import blockchain.blocks.CarrierBlock;
+import blockchain.blocks.HardToMineBlock;
+import blockchain.blocks.PrintableBlock;
+import blockchain.blocks.SimpleBlock;
+import blockchain.util.Pair;
 
-import java.util.function.Consumer;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 import java.util.function.Supplier;
 
 public class BlockFactory {
-    private final Supplier<Long> magicNumberSupplier;
+    private final Supplier<Long> magicNumberSupplier = (new Random())::nextLong;
     private final BlockChain blockChain;
+    List<String> messages = new ArrayList<>();
 
-    public BlockFactory(Supplier<Long> magicNumberSupplier, BlockChain blockChain) {
-        this.magicNumberSupplier = magicNumberSupplier;
+    public BlockFactory(BlockChain blockChain) {
         this.blockChain = blockChain;
     }
 
-    public boolean createBlock(String payload) {
+    public Optional<Pair<PrintableBlock, String>> createBlock() {
         long id = blockChain.blocksCount() + 1;
-        long startTime = System.currentTimeMillis();
         int security = blockChain.security();
         String previousBlockHash = blockChain.lastBlockHash();
 
-        Block block;
-        do {
-            if (!blockChain.lastBlockHash().equals(previousBlockHash)) {
-                return false;
-            }
-            block = insecureBlock(id, magicNumberSupplier.get(), previousBlockHash, payload);
-        } while (!block.hash().startsWith(secureHashBeginning(security)));
+        long startTime = now();
+        PrintableBlock block = new CarrierBlock(
+                new SimpleBlock(id, previousBlockHash, now()), getPayload()
+        );
+        PrintableBlock candidate = HardToMineBlock.mine(block, security, magicNumberSupplier);
+        long endTime = now();
 
-        long endTime = System.currentTimeMillis();
         synchronized (this) {
-            boolean added = blockChain.add(block);
-            if (added) {
-                logBlock(block, startTime, endTime, blockChain.security() - security);
-                return true;
+            Optional<Pair<PrintableBlock, String>> result = Optional.of(candidate)
+                    .filter(blockChain::add)
+                    .map(b -> new Pair<>(b, extraMessage(endTime - startTime, security)));
+            if (result.isPresent()) {
+                removeMessages();
             }
-            return false;
+            return result;
         }
+    }
+
+    synchronized
+    public void sendMessage(String message) {
+        messages.add(message);
+    }
+
+    private void removeMessages() {
+        messages = new ArrayList<>();
+    }
+
+    private String getPayload() {
+        if (messages.isEmpty()) {
+            return "no messages";
+        }
+        return "\n" + String.join("\n", messages);
     }
 
     public int blocksCount() {
         return blockChain.blocksCount();
     }
 
-    private void logBlock(Block block, long startTime, long endTime, int secDiff) {
-        String message = String.format(
-                "%s\nBlock was generating for %s seconds\n",
-                block, (endTime - startTime) / 1000
-        );
-        if (secDiff > 0) {
-            message += "N was increased to " + blockChain.security() + "\n";
-        } else if (secDiff == 0) {
-            message += "N stays the same\n";
+    private String extraMessage(long creationTime, int securityBefore) {
+        StringBuilder message = new StringBuilder("Block was generating for ");
+        message.append(creationTime / 1000).append(" seconds\n");
+        if (securityBefore < blockChain.security()) {
+            message.append("N was increased to ").append(blockChain.security());
+        } else if (securityBefore == blockChain.security()) {
+            message.append("N stays the same");
         } else {
-            message += "N was decreased by " + secDiff + "\n";
+            message.append("N was decreased by ").append(blockChain.security() - securityBefore);
         }
-    }
-
-    private String secureHashBeginning(int security) {
-        return "0".repeat(security);
+        return message.append("\n").toString();
     }
 
     private static long now() {

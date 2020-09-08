@@ -45,13 +45,12 @@ public class BlockChain {
         Block previousBlock = iterator.next();
         while (iterator.hasNext()) {
             Block currentBlock = iterator.next();
-            if (!previousBlock.isPreviousOf(currentBlock)) {
+            if (!currentBlock.isNextFor(previousBlock)) {
                 return false;
             }
             previousBlock = currentBlock;
         }
-        return block.hash().startsWith("0".repeat(security.get()))
-                && previousBlock.isPreviousOf(block);
+        return block.isNextFor(previousBlock);
     }
 
     public String lastBlockHash() {

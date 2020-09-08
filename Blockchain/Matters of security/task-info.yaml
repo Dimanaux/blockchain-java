@@ -1,33 +1,6 @@
 type: edu
 custom_name: stage5
 files:
-- name: src/blockchain/Hex.java
-  visible: true
-  text: |
-    package blockchain;
-
-    public class Hex {
-        private final byte[] bytes;
-
-        public Hex(byte[] bytes) {
-            this.bytes = bytes;
-        }
-
-        @Override
-        public String toString() {
-            StringBuilder hexString = new StringBuilder();
-            for (byte elem : bytes) {
-                hexString.append(byteToHex(elem));
-            }
-            return hexString.toString();
-        }
-
-        private static String byteToHex(byte bits) {
-            String hex = Integer.toHexString(0xff & bits);
-            return hex.length() < 2 ? "0" + hex : hex;
-        }
-    }
-  learner_created: false
 - name: src/blockchain/Main.java
   visible: true
   text: |
@@ -52,42 +25,6 @@ files:
             }
             executorService.shutdown();
             executorService.awaitTermination(10, TimeUnit.SECONDS);
-        }
-    }
-  learner_created: false
-- name: src/blockchain/Sha256.java
-  visible: true
-  text: |
-    package blockchain;
-
-    import java.nio.charset.StandardCharsets;
-    import java.security.MessageDigest;
-    import java.security.NoSuchAlgorithmException;
-
-    public class Sha256 {
-        private final String string;
-
-        public Sha256(String string) {
-            this.string = string;
-        }
-
-        @Override
-        public String toString() {
-            return new Hex(
-                    digest(string.getBytes(StandardCharsets.UTF_8))
-            ).toString();
-        }
-
-        private static byte[] digest(byte[] bytes) {
-            return sha256().digest(bytes);
-        }
-        private static MessageDigest sha256() {
-            try {
-                return MessageDigest.getInstance("SHA-256");
-            } catch (NoSuchAlgorithmException e) {
-                e.printStackTrace();
-                throw new RuntimeException(e);
-            }
         }
     }
   learner_created: false
@@ -172,65 +109,6 @@ files:
                     return "0";
                 }
             }
-        }
-    }
-  learner_created: false
-- name: src/blockchain/Block.java
-  visible: true
-  text: |
-    package blockchain;
-
-    public class Block {
-        private final long id;
-        private final long timestamp;
-        private final String previousBlockHash;
-        private final long magicNumber;
-        private final String payload;
-
-        public Block(
-                long id, long timestamp,
-                String previousBlockHash,
-                long magicNumber,
-                String payload
-        ) {
-            this.id = id;
-            this.timestamp = timestamp;
-            this.previousBlockHash = previousBlockHash;
-            this.magicNumber = magicNumber;
-            this.payload = payload;
-        }
-
-        public boolean isPreviousOf(Block other) {
-            return other.previousBlockHash.equals(hash());
-        }
-
-        public String hash() {
-            return new Sha256(hashSource()).toString();
-        }
-
-        private String hashSource() {
-            return String.format(
-                    "%s.%s.%s.%s.%s",
-                    id, timestamp, previousBlockHash,
-                    magicNumber, payload
-            );
-        }
-
-        @Override
-        public String toString() {
-            return String.format(
-                    "Block:\n%s\n" +
-                            "Id: %d\n" +
-                            "Timestamp: %d\n" +
-                            "Magic number: %d\n" +
-                            "Hash of the previous block: \n%s\n" +
-                            "Hash of the block: \n%s",
-                    payload, id, timestamp, magicNumber, previousBlockHash, hash()
-            );
-        }
-
-        public long getTimestamp() {
-            return timestamp;
         }
     }
   learner_created: false
@@ -566,6 +444,102 @@ files:
         }
     }
   learner_created: false
+- name: src/blockchain/blocks/HardToMineBlock.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/util/Hex.java
+  visible: true
+  text: |
+    package blockchain;
+
+    public class Hex {
+        private final byte[] bytes;
+
+        public Hex(byte[] bytes) {
+            this.bytes = bytes;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder hexString = new StringBuilder();
+            for (byte elem : bytes) {
+                hexString.append(byteToHex(elem));
+            }
+            return hexString.toString();
+        }
+
+        private static String byteToHex(byte bits) {
+            String hex = Integer.toHexString(0xff & bits);
+            return hex.length() < 2 ? "0" + hex : hex;
+        }
+    }
+  learner_created: true
+- name: src/blockchain/util/Sha256.java
+  visible: true
+  text: |
+    package blockchain;
+
+    import java.nio.charset.StandardCharsets;
+    import java.security.MessageDigest;
+    import java.security.NoSuchAlgorithmException;
+
+    public class Sha256 {
+        private final String string;
+
+        public Sha256(String string) {
+            this.string = string;
+        }
+
+        @Override
+        public String toString() {
+            return new Hex(
+                    digest(string.getBytes(StandardCharsets.UTF_8))
+            ).toString();
+        }
+
+        private static byte[] digest(byte[] bytes) {
+            return sha256().digest(bytes);
+        }
+        private static MessageDigest sha256() {
+            try {
+                return MessageDigest.getInstance("SHA-256");
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+                throw new RuntimeException(e);
+            }
+        }
+    }
+  learner_created: true
+- name: src/blockchain/util/Pair.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/blocks/Block.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/printers/ChosenKeysNewLinePrinter.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/blocks/CarrierBlock.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/Messenger.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/printers/Printer.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/printers/Printable.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/printers/OrderedPrinter.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/blocks/SimpleBlock.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/blocks/PrintableBlock.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/275/implement
 status: Unchecked
 record: -1

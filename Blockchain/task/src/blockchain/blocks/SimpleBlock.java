@@ -1,6 +1,6 @@
 package blockchain.blocks;
 
-import blockchain.Sha256;
+import blockchain.util.Sha256;
 import blockchain.printers.Printer;
 
 public class SimpleBlock implements PrintableBlock {
@@ -30,7 +30,7 @@ public class SimpleBlock implements PrintableBlock {
     }
 
     @Override
-    public boolean isPreviousOf(Block other) {
-        return other.hash().equals(this.previousBlockHash);
+    public boolean isNextFor(Block other) {
+        return this.previousBlockHash.equals(other.hash());
     }
 }

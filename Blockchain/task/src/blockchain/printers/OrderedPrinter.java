@@ -2,10 +2,12 @@ package blockchain.printers;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.Arrays.asList;
+import static java.util.stream.Collectors.joining;
 
 public class OrderedPrinter implements Printer<String> {
-    private static final List<String> order = List.of(
+    private static final List<String> order = asList(
             "Id", "Timestamp", "Magic number",
             "Hash of the previous block", "Hash of the block",
             "Block data"
@@ -29,6 +31,6 @@ public class OrderedPrinter implements Printer<String> {
     public String flush() {
         return order.stream()
                 .map(key -> key + ": " + attributes.getOrDefault(key, ""))
-                .collect(Collectors.joining("\n", header, footer));
+                .collect(joining("\n", header + "\n", "\n" + footer + "\n"));
     }
 }

@@ -1,11 +1,13 @@
 package blockchain.printers;
 
-import java.util.Set;
+import java.util.List;
+
+import static java.util.Arrays.asList;
 
 public class ChosenKeysNewLinePrinter<T> implements Printer<T> {
-    private static final Set<String> chosenKeys = Set.of(
+    private static final List<String> chosenKeys = asList(
             "Hash of the previous block",
-            "Hash of the block", "Block data"
+            "Hash of the block"
     );
 
     private final Printer<T> printer;

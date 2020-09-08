@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8e596a9-746a-4ff1-85df-e895f5144ee8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Messenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/util/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kehto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blockchain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/blockchain-java-Blockchain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain-task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blockchain/task/blockchain-java-Blockchain-task.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain-task_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blockchain/task/blockchain-java-Blockchain-task_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain-task_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Blockchain/task/blockchain-java-Blockchain-task_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems (1)/Rockstar games/Blockchain.Problems__1_-Rockstar_games.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems (1)/Rockstar games/Blockchain.Problems__1_-Rockstar_games.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems (1)/Rockstar games/Blockchain.Problems__1_-Rockstar_games.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Problems-30_years_before_and_after.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Problems-30_years_before_and_after_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Problems-30_years_before_and_after_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Blockchain.Problems-An_expression_with_large_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Blockchain.Problems-An_expression_with_large_numbers.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Blockchain.Problems-An_expression_with_large_numbers.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Problems-An_expression_with_large_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Problems-An_expression_with_large_numbers_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/An expression with large numbers/Problems-An_expression_with_large_numbers_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Blockchain.Problems-Apply_function_to_all_elements.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Blockchain.Problems-Apply_function_to_all_elements.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Blockchain.Problems-Apply_function_to_all_elements.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Problems-Apply_function_to_all_elements.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Problems-Apply_function_to_all_elements_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Apply function to all elements/Problems-Apply_function_to_all_elements_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Blockchain.Problems-Ascending_and_descending_sorting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Blockchain.Problems-Ascending_and_descending_sorting.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Blockchain.Problems-Ascending_and_descending_sorting.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Problems-Ascending_and_descending_sorting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Problems-Ascending_and_descending_sorting_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Ascending and descending sorting/Problems-Ascending_and_descending_sorting_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Blockchain.Problems-Bad_words_detecting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Blockchain.Problems-Bad_words_detecting.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Blockchain.Problems-Bad_words_detecting.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Problems-Bad_words_detecting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Problems-Bad_words_detecting_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Bad words detecting/Problems-Bad_words_detecting_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Blockchain.Problems-Breakfast_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Blockchain.Problems-Breakfast_Decorator.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Blockchain.Problems-Breakfast_Decorator.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Problems-Breakfast_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Problems-Breakfast_Decorator_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Breakfast Decorator/Problems-Breakfast_Decorator_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Blockchain.Problems-Burgers.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Problems-Burgers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Problems-Burgers_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Burgers/Problems-Burgers_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Blockchain.Problems-Calculate_the_number_of_distinct_characters.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Blockchain.Problems-Calculate_the_number_of_distinct_characters.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Blockchain.Problems-Calculate_the_number_of_distinct_characters.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Problems-Calculate_the_number_of_distinct_characters.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Problems-Calculate_the_number_of_distinct_characters_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculate the number of distinct characters/Problems-Calculate_the_number_of_distinct_characters_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Blockchain.Problems-Calculating_factorials.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Blockchain.Problems-Calculating_factorials.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Blockchain.Problems-Calculating_factorials.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Calculating factorials/Problems-Calculating_factorials_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Blockchain.Problems-Check_if_a_number_is_prime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Blockchain.Problems-Check_if_a_number_is_prime.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Blockchain.Problems-Check_if_a_number_is_prime.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Problems-Check_if_a_number_is_prime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Problems-Check_if_a_number_is_prime_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check if a number is prime/Problems-Check_if_a_number_is_prime_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Blockchain.Problems-Check_whether_a_number_is_prime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Blockchain.Problems-Check_whether_a_number_is_prime.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Blockchain.Problems-Check_whether_a_number_is_prime.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Problems-Check_whether_a_number_is_prime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Problems-Check_whether_a_number_is_prime_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Check whether a number is prime/Problems-Check_whether_a_number_is_prime_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Blockchain.Problems-Cinema_Facade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Blockchain.Problems-Cinema_Facade.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Blockchain.Problems-Cinema_Facade.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Problems-Cinema_Facade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Problems-Cinema_Facade_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Cinema Facade/Problems-Cinema_Facade_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Blockchain.Problems-Clock_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Blockchain.Problems-Clock_factory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Blockchain.Problems-Clock_factory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Problems-Clock_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Problems-Clock_factory_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Clock factory/Problems-Clock_factory_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Blockchain.Problems-Coffee_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Blockchain.Problems-Coffee_Decorator.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Blockchain.Problems-Coffee_Decorator.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Problems-Coffee_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Problems-Coffee_Decorator_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Coffee Decorator/Problems-Coffee_Decorator_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Blockchain.Problems-Comparing_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Blockchain.Problems-Comparing_numbers.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Blockchain.Problems-Comparing_numbers.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Problems-Comparing_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Problems-Comparing_numbers_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Comparing numbers/Problems-Comparing_numbers_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Blockchain.Problems-Composite_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Blockchain.Problems-Composite_numbers.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Blockchain.Problems-Composite_numbers.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Problems-Composite_numbers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Problems-Composite_numbers_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Composite numbers/Problems-Composite_numbers_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Blockchain.Problems-Computer_Facade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Blockchain.Problems-Computer_Facade.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Blockchain.Problems-Computer_Facade.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Problems-Computer_Facade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Problems-Computer_Facade_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Computer Facade/Problems-Computer_Facade_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Blockchain.Problems-Convert_numbers_to_days.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Blockchain.Problems-Convert_numbers_to_days.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Blockchain.Problems-Convert_numbers_to_days.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Problems-Convert_numbers_to_days.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Problems-Convert_numbers_to_days_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert numbers to days/Problems-Convert_numbers_to_days_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Blockchain.Problems-Convert_to_byte_array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Blockchain.Problems-Convert_to_byte_array.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Blockchain.Problems-Convert_to_byte_array.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Problems-Convert_to_byte_array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Problems-Convert_to_byte_array_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Convert to byte array/Problems-Convert_to_byte_array_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Blockchain.Problems-Count_elements_of_an_array_in_another_one.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Blockchain.Problems-Count_elements_of_an_array_in_another_one.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Blockchain.Problems-Count_elements_of_an_array_in_another_one.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Problems-Count_elements_of_an_array_in_another_one.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Problems-Count_elements_of_an_array_in_another_one_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count elements of an array in another one/Problems-Count_elements_of_an_array_in_another_one_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Blockchain.Problems-Count_passwords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Blockchain.Problems-Count_passwords.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Blockchain.Problems-Count_passwords.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Problems-Count_passwords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Problems-Count_passwords_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Count passwords/Problems-Count_passwords_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Blockchain.Problems-Countdown_counter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Blockchain.Problems-Countdown_counter.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Blockchain.Problems-Countdown_counter.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Problems-Countdown_counter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Problems-Countdown_counter_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Countdown counter/Problems-Countdown_counter_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Blockchain.Problems-Counting_clicks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Blockchain.Problems-Counting_clicks.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Blockchain.Problems-Counting_clicks.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Problems-Counting_clicks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Problems-Counting_clicks_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting clicks/Problems-Counting_clicks_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Blockchain.Problems-Counting_number_of_instances.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Blockchain.Problems-Counting_number_of_instances.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Blockchain.Problems-Counting_number_of_instances.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Problems-Counting_number_of_instances.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Problems-Counting_number_of_instances_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Counting number of instances/Problems-Counting_number_of_instances_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Blockchain.Problems-Create_an_euphonious_word.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Blockchain.Problems-Create_an_euphonious_word.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Blockchain.Problems-Create_an_euphonious_word.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Problems-Create_an_euphonious_word.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Problems-Create_an_euphonious_word_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Create an euphonious word/Problems-Create_an_euphonious_word_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Blockchain.Problems-Distance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Blockchain.Problems-Distance.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Blockchain.Problems-Distance.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Problems-Distance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Problems-Distance_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Distance/Problems-Distance_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Blockchain.Problems-Don't_be_late_again.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Blockchain.Problems-Don't_be_late_again.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Blockchain.Problems-Don't_be_late_again.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Problems-Don't_be_late_again.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Problems-Don't_be_late_again_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Don't be late again/Problems-Don't_be_late_again_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Blockchain.Problems-Expression_closure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Blockchain.Problems-Expression_closure.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Blockchain.Problems-Expression_closure.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Problems-Expression_closure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Problems-Expression_closure_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Expression closure/Problems-Expression_closure_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Blockchain.Problems-Find_X.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Blockchain.Problems-Find_X.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Blockchain.Problems-Find_X.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Problems-Find_X.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Problems-Find_X_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find X/Problems-Find_X_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Blockchain.Problems-Find_all_mondays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Blockchain.Problems-Find_all_mondays.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Blockchain.Problems-Find_all_mondays.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Problems-Find_all_mondays.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Problems-Find_all_mondays_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find all mondays/Problems-Find_all_mondays_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Blockchain.Problems-Find_the_seed.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Blockchain.Problems-Find_the_seed.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Blockchain.Problems-Find_the_seed.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Problems-Find_the_seed.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Problems-Find_the_seed_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Find the seed/Problems-Find_the_seed_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Blockchain.Problems-Finding_max_and_min_elements.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Blockchain.Problems-Finding_max_and_min_elements.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Blockchain.Problems-Finding_max_and_min_elements.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Problems-Finding_max_and_min_elements.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Problems-Finding_max_and_min_elements_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Finding max and min elements/Problems-Finding_max_and_min_elements_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Blockchain.Problems-Generating_passwords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Blockchain.Problems-Generating_passwords.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Blockchain.Problems-Generating_passwords.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Problems-Generating_passwords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Problems-Generating_passwords_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/Problems-Generating_passwords_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Blockchain.Problems-Heron's_formula.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Blockchain.Problems-Heron's_formula.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Blockchain.Problems-Heron's_formula.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Problems-Heron's_formula.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Problems-Heron's_formula_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Heron's formula/Problems-Heron's_formula_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Blockchain.Problems-How_many_date-time_pairs_match_the_range.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Blockchain.Problems-How_many_date-time_pairs_match_the_range.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Blockchain.Problems-How_many_date-time_pairs_match_the_range.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Problems-How_many_date-time_pairs_match_the_range.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Problems-How_many_date-time_pairs_match_the_range_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/How many date-time pairs match the range/Problems-How_many_date-time_pairs_match_the_range_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Blockchain.Problems-Implementing_the_EntrySet_method.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Blockchain.Problems-Implementing_the_EntrySet_method.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Blockchain.Problems-Implementing_the_EntrySet_method.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Problems-Implementing_the_EntrySet_method.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Problems-Implementing_the_EntrySet_method_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Implementing the EntrySet method/Problems-Implementing_the_EntrySet_method_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Blockchain.Problems-Is_the_date_between_the_two_other_dates_.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Blockchain.Problems-Is_the_date_between_the_two_other_dates_.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Blockchain.Problems-Is_the_date_between_the_two_other_dates_.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Problems-Is_the_date_between_the_two_other_dates_.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Problems-Is_the_date_between_the_two_other_dates__main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Is the date between the two other dates?/Problems-Is_the_date_between_the_two_other_dates__test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Blockchain.Problems-Javadoc_comment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Blockchain.Problems-Javadoc_comment.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Blockchain.Problems-Javadoc_comment.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Problems-Javadoc_comment.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Problems-Javadoc_comment_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Javadoc comment/Problems-Javadoc_comment_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Blockchain.Problems-Laptop_factory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Problems-Laptop_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Problems-Laptop_factory_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop factory/Problems-Laptop_factory_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Blockchain.Problems-Laptop_store.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Blockchain.Problems-Laptop_store.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Blockchain.Problems-Laptop_store.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Problems-Laptop_store.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Problems-Laptop_store_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Laptop store/Problems-Laptop_store_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Blockchain.Problems-Liquid_pressure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Blockchain.Problems-Liquid_pressure.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Blockchain.Problems-Liquid_pressure.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Problems-Liquid_pressure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Problems-Liquid_pressure_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Liquid pressure/Problems-Liquid_pressure_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Blockchain.Problems-Max_of_two_integers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Blockchain.Problems-Max_of_two_integers.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Blockchain.Problems-Max_of_two_integers.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Problems-Max_of_two_integers.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Problems-Max_of_two_integers_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Max of two integers/Problems-Max_of_two_integers_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Blockchain.Problems-Merging_date-time_instances.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Blockchain.Problems-Merging_date-time_instances.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Blockchain.Problems-Merging_date-time_instances.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Problems-Merging_date-time_instances.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Problems-Merging_date-time_instances_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Merging date-time instances/Problems-Merging_date-time_instances_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Blockchain.Problems-Messaging.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Blockchain.Problems-Messaging.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Blockchain.Problems-Messaging.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Problems-Messaging.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Problems-Messaging_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Messaging/Problems-Messaging_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Blockchain.Problems-Motor_static_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Blockchain.Problems-Motor_static_factory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Blockchain.Problems-Motor_static_factory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Problems-Motor_static_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Problems-Motor_static_factory_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Motor static factory/Problems-Motor_static_factory_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Blockchain.Problems-Multithreaded_counter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Blockchain.Problems-Multithreaded_counter.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Blockchain.Problems-Multithreaded_counter.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Problems-Multithreaded_counter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Problems-Multithreaded_counter_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Multithreaded counter/Problems-Multithreaded_counter_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Blockchain.Problems-Palindrome.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Blockchain.Problems-Palindrome.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Blockchain.Problems-Palindrome.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Problems-Palindrome.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Problems-Palindrome_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/Problems-Palindrome_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Blockchain.Problems-Phone_factory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Problems-Phone_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Problems-Phone_factory_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Phone factory/Problems-Phone_factory_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Blockchain.Problems-Pizza_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Blockchain.Problems-Pizza_Decorator.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Blockchain.Problems-Pizza_Decorator.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Problems-Pizza_Decorator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Problems-Pizza_Decorator_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pizza Decorator/Problems-Pizza_Decorator_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Blockchain.Problems-Pow.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Blockchain.Problems-Pow.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Blockchain.Problems-Pow.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Problems-Pow.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Problems-Pow_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Pow/Problems-Pow_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Blockchain.Problems-Print_elements_of_a_stream.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Blockchain.Problems-Print_elements_of_a_stream.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Blockchain.Problems-Print_elements_of_a_stream.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Problems-Print_elements_of_a_stream.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Problems-Print_elements_of_a_stream_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Print elements of a stream/Problems-Print_elements_of_a_stream_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Blockchain.Problems-Production_of_all_numbers_in_the_range.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Blockchain.Problems-Production_of_all_numbers_in_the_range.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Blockchain.Problems-Production_of_all_numbers_in_the_range.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Problems-Production_of_all_numbers_in_the_range.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Problems-Production_of_all_numbers_in_the_range_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Production of all numbers in the range/Problems-Production_of_all_numbers_in_the_range_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Blockchain.Problems-Range_quadratic_sum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Blockchain.Problems-Range_quadratic_sum.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Blockchain.Problems-Range_quadratic_sum.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Problems-Range_quadratic_sum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Problems-Range_quadratic_sum_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Range quadratic sum/Problems-Range_quadratic_sum_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Blockchain.Problems-Rehashing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Blockchain.Problems-Rehashing.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Blockchain.Problems-Rehashing.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Problems-Rehashing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Problems-Rehashing_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Rehashing/Problems-Rehashing_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Blockchain.Problems-Remote_Controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Blockchain.Problems-Remote_Controller.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Blockchain.Problems-Remote_Controller.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Problems-Remote_Controller.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Problems-Remote_Controller_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Remote Controller/Problems-Remote_Controller_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Blockchain.Problems-Removing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Blockchain.Problems-Removing.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Blockchain.Problems-Removing.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Problems-Removing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Problems-Removing_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Removing/Problems-Removing_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Blockchain.Problems-Robot_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Blockchain.Problems-Robot_factory.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Blockchain.Problems-Robot_factory.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Problems-Robot_factory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Problems-Robot_factory_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot factory/Problems-Robot_factory_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Blockchain.Problems-Robot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Blockchain.Problems-Robot.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Blockchain.Problems-Robot.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Problems-Robot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Problems-Robot_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Robot/Problems-Robot_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Blockchain.Problems-Seconds_between_two_time_points.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Blockchain.Problems-Seconds_between_two_time_points.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Blockchain.Problems-Seconds_between_two_time_points.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Problems-Seconds_between_two_time_points.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Problems-Seconds_between_two_time_points_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds between two time points/Problems-Seconds_between_two_time_points_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Blockchain.Problems-Seconds_since_start_of_a_day.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Blockchain.Problems-Seconds_since_start_of_a_day.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Blockchain.Problems-Seconds_since_start_of_a_day.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Problems-Seconds_since_start_of_a_day.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Problems-Seconds_since_start_of_a_day_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Seconds since start of a day/Problems-Seconds_since_start_of_a_day_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Blockchain.Problems-Serializable_user.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Problems-Serializable_user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Problems-Serializable_user_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Serializable user/Problems-Serializable_user_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Blockchain.Problems-Smart_house.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Blockchain.Problems-Smart_house.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Blockchain.Problems-Smart_house.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Problems-Smart_house.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Problems-Smart_house_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Smart house/Problems-Smart_house_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Blockchain.Problems-Some_hours_and_minutes_ago.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Blockchain.Problems-Some_hours_and_minutes_ago.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Blockchain.Problems-Some_hours_and_minutes_ago.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Problems-Some_hours_and_minutes_ago.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Problems-Some_hours_and_minutes_ago_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Some hours and minutes ago/Problems-Some_hours_and_minutes_ago_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Blockchain.Problems-Static_factory_methods_for_Time.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Blockchain.Problems-Static_factory_methods_for_Time.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Blockchain.Problems-Static_factory_methods_for_Time.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Problems-Static_factory_methods_for_Time.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Problems-Static_factory_methods_for_Time_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Static factory methods for Time/Problems-Static_factory_methods_for_Time_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Blockchain.Problems-Subtracting_hours_and_adding_minutes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Blockchain.Problems-Subtracting_hours_and_adding_minutes.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Blockchain.Problems-Subtracting_hours_and_adding_minutes.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Problems-Subtracting_hours_and_adding_minutes.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Problems-Subtracting_hours_and_adding_minutes_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Subtracting hours and adding minutes/Problems-Subtracting_hours_and_adding_minutes_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Blockchain.Problems-Sum_of_divisors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Blockchain.Problems-Sum_of_divisors.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Blockchain.Problems-Sum_of_divisors.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Problems-Sum_of_divisors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Problems-Sum_of_divisors_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Sum of divisors/Problems-Sum_of_divisors_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Blockchain.Problems-Summing_with_threads.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Blockchain.Problems-Summing_with_threads.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Blockchain.Problems-Summing_with_threads.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Problems-Summing_with_threads.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Problems-Summing_with_threads_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Summing with threads/Problems-Summing_with_threads_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Blockchain.Problems-The__un_-ordered_sequence.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Blockchain.Problems-The__un_-ordered_sequence.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Blockchain.Problems-The__un_-ordered_sequence.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Problems-The__un_-ordered_sequence.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Problems-The__un_-ordered_sequence_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The (un)-ordered sequence/Problems-The__un_-ordered_sequence_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Blockchain.Problems-The_Range_class.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Blockchain.Problems-The_Range_class.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Blockchain.Problems-The_Range_class.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Problems-The_Range_class.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Problems-The_Range_class_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The Range class/Problems-The_Range_class_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Blockchain.Problems-The_angle_between_vectors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Blockchain.Problems-The_angle_between_vectors.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Blockchain.Problems-The_angle_between_vectors.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Problems-The_angle_between_vectors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Problems-The_angle_between_vectors_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The angle between vectors/Problems-The_angle_between_vectors_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Blockchain.Problems-The_average_salary.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Blockchain.Problems-The_average_salary.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Blockchain.Problems-The_average_salary.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Problems-The_average_salary.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Problems-The_average_salary_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The average salary/Problems-The_average_salary_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Blockchain.Problems-The_chain_of_responsibility.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Blockchain.Problems-The_chain_of_responsibility.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Blockchain.Problems-The_chain_of_responsibility.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Problems-The_chain_of_responsibility.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Problems-The_chain_of_responsibility_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The chain of responsibility/Problems-The_chain_of_responsibility_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Blockchain.Problems-The_first_and_the_last_day_of_a_month.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Blockchain.Problems-The_first_and_the_last_day_of_a_month.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Blockchain.Problems-The_first_and_the_last_day_of_a_month.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Problems-The_first_and_the_last_day_of_a_month.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Problems-The_first_and_the_last_day_of_a_month_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The first and the last day of a month/Problems-The_first_and_the_last_day_of_a_month_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Blockchain.Problems-The_last_day_of_a_month.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Blockchain.Problems-The_last_day_of_a_month.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Blockchain.Problems-The_last_day_of_a_month.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Problems-The_last_day_of_a_month.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Problems-The_last_day_of_a_month_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The last day of a month/Problems-The_last_day_of_a_month_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Blockchain.Problems-The_longest_word.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Blockchain.Problems-The_longest_word.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Blockchain.Problems-The_longest_word.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Problems-The_longest_word.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Problems-The_longest_word_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/Problems-The_longest_word_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Blockchain.Problems-The_lucky_ticket.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Blockchain.Problems-The_lucky_ticket.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Blockchain.Problems-The_lucky_ticket.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/Problems-The_lucky_ticket_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Blockchain.Problems-The_number_of_tens.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Blockchain.Problems-The_number_of_tens.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Blockchain.Problems-The_number_of_tens.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Problems-The_number_of_tens.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Problems-The_number_of_tens_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The number of tens/Problems-The_number_of_tens_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Blockchain.Problems-The_passed_hours_since_the_beginning_of_year.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Blockchain.Problems-The_passed_hours_since_the_beginning_of_year.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Blockchain.Problems-The_passed_hours_since_the_beginning_of_year.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Problems-The_passed_hours_since_the_beginning_of_year.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Problems-The_passed_hours_since_the_beginning_of_year_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The passed hours since the beginning of year/Problems-The_passed_hours_since_the_beginning_of_year_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Blockchain.Problems-The_smallest_value.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Blockchain.Problems-The_smallest_value.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Blockchain.Problems-The_smallest_value.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Problems-The_smallest_value.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Problems-The_smallest_value_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The smallest value/Problems-The_smallest_value_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Blockchain.Problems-The_star_figure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Blockchain.Problems-The_star_figure.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Blockchain.Problems-The_star_figure.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Problems-The_star_figure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Problems-The_star_figure_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The star figure/Problems-The_star_figure_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Blockchain.Problems-The_total_sum_of_transaction_by_each_account.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Blockchain.Problems-The_total_sum_of_transaction_by_each_account.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Blockchain.Problems-The_total_sum_of_transaction_by_each_account.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Problems-The_total_sum_of_transaction_by_each_account.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Problems-The_total_sum_of_transaction_by_each_account_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/The total sum of transaction by each account/Problems-The_total_sum_of_transaction_by_each_account_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Blockchain.Problems-Triangle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Blockchain.Problems-Triangle.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Blockchain.Problems-Triangle.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Problems-Triangle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Problems-Triangle_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Triangle/Problems-Triangle_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Blockchain.Problems-Undo_command.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Problems-Undo_command.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Problems-Undo_command_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Undo command/Problems-Undo_command_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Blockchain.Problems-VeganPizza.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Blockchain.Problems-VeganPizza.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Blockchain.Problems-VeganPizza.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Problems-VeganPizza.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Problems-VeganPizza_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/VeganPizza/Problems-VeganPizza_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/Blockchain-util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/Blockchain-util_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/Blockchain-util_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/Matters of security/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/Matters of security/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/You’ve got a message/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/You’ve got a message/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/BlockChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/BlockFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/Hex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/Miner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/main/blockchain/Sha256.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/test/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/test/BlockParseException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/test/BlockchainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/classes/java/test/Clue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/classes/BlockchainTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/test-results/test/TEST-BlockchainTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_10420086361105270763_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_11313844580705645461_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_11600575557631979271_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_11653052654470367764_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_12368699477119948035_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_12902162983909935001_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_1346507574051649073_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_14265432723215875362_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_14836150804936246501_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_14886770100058860182_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_15347301738051870662_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_15965440990301336074_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_17171665665194278183_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_17276752551267586785_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_17458438243936467333_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_17990195865923820552_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_1802010897771298130_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_2445941495895928348_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_2879475109427657956_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_3579395891040465432_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_4387836237383078811_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_5682705829092983626_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_5972901023660450678_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_6013588629867204403_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_6044884369263218548_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_619389662656501382_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_654873378702276106_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_6708800612935250947_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_702504317481691724_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_7102832990752236692_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_7390401908039032416_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_7450646591111217103_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_7604512223425221510_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_820911319522283034_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_8224337134246543300_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_8557027510910949150_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_9352221829920680794_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/build/tmp/test/jar_extract_9975532110438118170_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/Block.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/BlockChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/BlockFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/Hex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/Miner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/out/production/classes/blockchain/Sha256.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Hex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/util/Hex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Miner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Miner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/Sha256.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/util/Sha256.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/CarrierBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/CarrierBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/HardToMineBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/HardToMineBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/SimpleBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/blocks/SimpleBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/printers/ChosenKeysNewLinePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/printers/ChosenKeysNewLinePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blockchain/task/src/blockchain/printers/OrderedPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blockchain/task/src/blockchain/printers/OrderedPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems (1)/Rockstar games/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems (1)/Rockstar games/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems (1)/Rockstar games/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems (1)/Rockstar games/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems (1)/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/30 years before and after/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/30 years before and after/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/30 years before and after/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/30 years before and after/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/An expression with large numbers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/An expression with large numbers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/An expression with large numbers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/An expression with large numbers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Apply function to all elements/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Apply function to all elements/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Apply function to all elements/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Apply function to all elements/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Ascending and descending sorting/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Ascending and descending sorting/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Ascending and descending sorting/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Ascending and descending sorting/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Bad words detecting/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Bad words detecting/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Bad words detecting/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Bad words detecting/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Breakfast Decorator/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Breakfast Decorator/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Breakfast Decorator/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Breakfast Decorator/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Burgers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Burgers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Burgers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Burgers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculate the number of distinct characters/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculate the number of distinct characters/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculate the number of distinct characters/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculate the number of distinct characters/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculating factorials/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculating factorials/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculating factorials/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Calculating factorials/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check if a number is prime/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check if a number is prime/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check if a number is prime/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check if a number is prime/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check whether a number is prime/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check whether a number is prime/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check whether a number is prime/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Check whether a number is prime/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Cinema Facade/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Cinema Facade/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Cinema Facade/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Cinema Facade/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Clock factory/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Clock factory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Clock factory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Clock factory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Coffee Decorator/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Coffee Decorator/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Coffee Decorator/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Coffee Decorator/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Comparing numbers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Comparing numbers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Comparing numbers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Comparing numbers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Composite numbers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Composite numbers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Composite numbers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Composite numbers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Computer Facade/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Computer Facade/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Computer Facade/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Computer Facade/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert numbers to days/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert numbers to days/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert numbers to days/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert numbers to days/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert to byte array/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert to byte array/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert to byte array/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Convert to byte array/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count elements of an array in another one/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count elements of an array in another one/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count elements of an array in another one/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count elements of an array in another one/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count passwords/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count passwords/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count passwords/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Count passwords/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Countdown counter/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Countdown counter/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Countdown counter/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Countdown counter/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting clicks/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting clicks/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting clicks/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting clicks/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting number of instances/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting number of instances/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting number of instances/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Counting number of instances/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Create an euphonious word/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Create an euphonious word/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Create an euphonious word/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Create an euphonious word/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Create an euphonious word/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Distance/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Distance/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Distance/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Distance/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Don't be late again/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Don't be late again/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Don't be late again/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Don't be late again/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Expression closure/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Expression closure/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Expression closure/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Expression closure/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find X/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find X/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find X/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find X/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find all mondays/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find all mondays/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find all mondays/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find all mondays/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find all mondays/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find the seed/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find the seed/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find the seed/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Find the seed/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Finding max and min elements/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Finding max and min elements/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Finding max and min elements/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Finding max and min elements/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/out/production/classes/Main$Random.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Generating passwords/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Heron's formula/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Heron's formula/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Heron's formula/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Heron's formula/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/How many date-time pairs match the range/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/How many date-time pairs match the range/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/How many date-time pairs match the range/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/How many date-time pairs match the range/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/out/production/classes/Main$HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/out/production/classes/Main$TableEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Implementing the EntrySet method/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Is the date between the two other dates?/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Is the date between the two other dates?/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Is the date between the two other dates?/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Is the date between the two other dates?/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Javadoc comment/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Javadoc comment/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Javadoc comment/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Javadoc comment/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop factory/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop factory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop factory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop factory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop store/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop store/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop store/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Laptop store/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Liquid pressure/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Liquid pressure/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Liquid pressure/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Liquid pressure/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Max of two integers/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Max of two integers/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Max of two integers/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Max of two integers/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Merging date-time instances/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Merging date-time instances/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Merging date-time instances/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Merging date-time instances/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Messaging/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Messaging/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Messaging/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Messaging/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Motor static factory/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Motor static factory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Motor static factory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Motor static factory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Multithreaded counter/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Multithreaded counter/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Multithreaded counter/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Multithreaded counter/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Palindrome/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Palindrome/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Palindrome/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Palindrome/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Phone factory/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Phone factory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Phone factory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Phone factory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pizza Decorator/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pizza Decorator/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pizza Decorator/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pizza Decorator/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pow/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pow/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pow/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Pow/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Print elements of a stream/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Print elements of a stream/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Print elements of a stream/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Print elements of a stream/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Production of all numbers in the range/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Production of all numbers in the range/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Production of all numbers in the range/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Production of all numbers in the range/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Range quadratic sum/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Range quadratic sum/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Range quadratic sum/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Range quadratic sum/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/out/production/classes/Main$HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/out/production/classes/Main$TableEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Rehashing/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Remote Controller/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Remote Controller/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Remote Controller/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Remote Controller/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/out/production/classes/Main$HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/out/production/classes/Main$TableEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Removing/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot factory/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot factory/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot factory/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot factory/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Robot/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds between two time points/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds between two time points/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds between two time points/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds between two time points/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds since start of a day/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds since start of a day/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds since start of a day/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Seconds since start of a day/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Serializable user/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Serializable user/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Serializable user/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Serializable user/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Smart house/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Smart house/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Smart house/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Smart house/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Some hours and minutes ago/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Some hours and minutes ago/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Some hours and minutes ago/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Some hours and minutes ago/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Static factory methods for Time/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Static factory methods for Time/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Static factory methods for Time/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Static factory methods for Time/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Subtracting hours and adding minutes/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Subtracting hours and adding minutes/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Subtracting hours and adding minutes/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Subtracting hours and adding minutes/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Sum of divisors/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Sum of divisors/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Sum of divisors/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Sum of divisors/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Summing with threads/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Summing with threads/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Summing with threads/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Summing with threads/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The (un)-ordered sequence/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The (un)-ordered sequence/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The (un)-ordered sequence/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The (un)-ordered sequence/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The (un)-ordered sequence/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The Range class/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The Range class/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The Range class/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The Range class/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The angle between vectors/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The angle between vectors/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The angle between vectors/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The angle between vectors/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The average salary/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The average salary/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The average salary/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The average salary/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The chain of responsibility/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The chain of responsibility/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The chain of responsibility/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The chain of responsibility/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The first and the last day of a month/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The first and the last day of a month/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The first and the last day of a month/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The first and the last day of a month/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The last day of a month/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The last day of a month/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The last day of a month/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The last day of a month/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The longest word/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The longest word/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The longest word/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The longest word/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The lucky ticket/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The lucky ticket/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The lucky ticket/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The lucky ticket/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The number of tens/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The number of tens/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The number of tens/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The number of tens/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The passed hours since the beginning of year/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The passed hours since the beginning of year/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The passed hours since the beginning of year/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The passed hours since the beginning of year/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The smallest value/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The smallest value/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The smallest value/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The smallest value/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The star figure/out/production/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The star figure/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The star figure/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The star figure/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The star figure/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The total sum of transaction by each account/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The total sum of transaction by each account/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The total sum of transaction by each account/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/The total sum of transaction by each account/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Triangle/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Triangle/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Triangle/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Triangle/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Undo command/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Undo command/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Undo command/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/Undo command/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/VeganPizza/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/VeganPizza/task-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/VeganPizza/task-remote-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/VeganPizza/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/lesson-info.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hBvj0bZQMGmhQaDjubL67tESZl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37356323" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="blockchain.blocks" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="blockchain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="blockchain.Main" />
+      <module name="blockchain-java-Blockchain-task_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blockchain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test suite" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":Blockchain-task:test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Gradle.test suite" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Gradle.test suite" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8e596a9-746a-4ff1-85df-e895f5144ee8" name="Default Changelist" comment="" />
+      <created>1599497430798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599497430798</updated>
+      <workItem from="1599497455423" duration="5574000" />
+      <workItem from="1599542077769" duration="3723000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1599510080767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1599510080767" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599546110985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599546110985" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1599511666739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599511666739" />
+    <state x="899" y="173" key="#xdebugger.evaluate" timestamp="1599545335679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="899" y="173" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1599545335679" />
+    <state width="1537" height="479" key="GridCell.Tab.0.bottom" timestamp="1599546894822">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="479" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599546894822" />
+    <state width="1537" height="479" key="GridCell.Tab.0.center" timestamp="1599546894822">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="479" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599546894822" />
+    <state width="1537" height="479" key="GridCell.Tab.0.left" timestamp="1599546894822">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="479" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599546894822" />
+    <state width="1537" height="479" key="GridCell.Tab.0.right" timestamp="1599546894822">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="479" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599546894822" />
+    <state width="1537" height="270" key="GridCell.Tab.1.bottom" timestamp="1599546291575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="270" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599546291575" />
+    <state width="1537" height="270" key="GridCell.Tab.1.center" timestamp="1599546291575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="270" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599546291575" />
+    <state width="1537" height="270" key="GridCell.Tab.1.left" timestamp="1599546291574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="270" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599546291574" />
+    <state width="1537" height="270" key="GridCell.Tab.1.right" timestamp="1599546291575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="270" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599546291575" />
+    <state x="540" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599545525726">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1599545525726" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1599510918520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599510918520" />
+    <state x="281" y="291" width="960" height="678" key="search.everywhere.popup" timestamp="1599545258825">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="281" y="291" width="960" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599545258825" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockFactory.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockChain.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blockchain/task/src/blockchain/BlockChain.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel>
+      <module name="blockchain-java-Blockchain-task" target="1.8" />
+      <module name="blockchain-java-Blockchain-task_main" target="1.8" />
+      <module name="blockchain-java-Blockchain-task_test" target="1.8" />
+      <module name="Blockchain-util" target="1.8" />
+      <module name="Blockchain-util_main" target="1.8" />
+      <module name="Blockchain-util_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

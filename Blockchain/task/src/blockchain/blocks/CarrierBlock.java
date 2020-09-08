@@ -1,6 +1,6 @@
 package blockchain.blocks;
 
-import blockchain.Sha256;
+import blockchain.util.Sha256;
 import blockchain.printers.Printer;
 
 public class CarrierBlock implements PrintableBlock {
@@ -18,13 +18,14 @@ public class CarrierBlock implements PrintableBlock {
     }
 
     @Override
-    public boolean isPreviousOf(Block other) {
-        return this.block.isPreviousOf(other);
+    public boolean isNextFor(Block other) {
+        return this.block.isNextFor(other);
     }
 
     @Override
     public void printTo(Printer<?> printer) {
         block.printTo(printer);
         printer.put("Block data", message);
+        printer.put("Hash of the block", hash());
     }
 }
