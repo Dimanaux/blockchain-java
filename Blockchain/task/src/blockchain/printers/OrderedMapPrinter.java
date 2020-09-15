@@ -6,9 +6,9 @@ import java.util.List;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.joining;
 
-public class OrderedPrinter implements Printer<String> {
+public class OrderedMapPrinter implements MapPrinter<String> {
     private static final List<String> order = asList(
-            "Id", "Timestamp", "Magic number",
+            "Created by", "Id", "Timestamp", "Magic number",
             "Hash of the previous block", "Hash of the block",
             "Block data"
     );
@@ -17,7 +17,7 @@ public class OrderedPrinter implements Printer<String> {
     private final String header;
     private final String footer;
 
-    public OrderedPrinter(String header, String footer) {
+    public OrderedMapPrinter(String header, String footer) {
         this.header = header;
         this.footer = footer;
     }
@@ -31,6 +31,6 @@ public class OrderedPrinter implements Printer<String> {
     public String flush() {
         return order.stream()
                 .map(key -> key + ": " + attributes.getOrDefault(key, ""))
-                .collect(joining("\n", header + "\n", "\n" + footer + "\n"));
+                .collect(joining("\n", header + "\n", "\n" + footer));
     }
 }

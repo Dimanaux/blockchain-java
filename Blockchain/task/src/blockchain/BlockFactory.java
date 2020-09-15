@@ -4,7 +4,9 @@ import blockchain.blocks.CarrierBlock;
 import blockchain.blocks.HardToMineBlock;
 import blockchain.blocks.PrintableBlock;
 import blockchain.blocks.SimpleBlock;
-import blockchain.util.Pair;
+import blockchain.printers.ChosenKeysNewLinePrinter;
+import blockchain.printers.MapPrinter;
+import blockchain.printers.OrderedMapPrinter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,53 +17,60 @@ import java.util.function.Supplier;
 public class BlockFactory {
     private final Supplier<Long> magicNumberSupplier = (new Random())::nextLong;
     private final BlockChain blockChain;
-    List<String> messages = new ArrayList<>();
+    private final List<String> messages = new ArrayList<>();
 
     public BlockFactory(BlockChain blockChain) {
         this.blockChain = blockChain;
     }
 
-    public Optional<Pair<PrintableBlock, String>> createBlock() {
+    public Optional<MapPrinter<String>> createBlock(String blockTransaction) {
         long id = blockChain.blocksCount() + 1;
         int security = blockChain.security();
         String previousBlockHash = blockChain.lastBlockHash();
 
         long startTime = now();
         PrintableBlock block = new CarrierBlock(
-                new SimpleBlock(id, previousBlockHash, now()), getPayload()
+                new SimpleBlock(id, previousBlockHash, now()), blockTransaction, getPayload()
         );
         PrintableBlock candidate = HardToMineBlock.mine(block, security, magicNumberSupplier);
         long endTime = now();
 
-        synchronized (this) {
-            Optional<Pair<PrintableBlock, String>> result = Optional.of(candidate)
-                    .filter(blockChain::add)
-                    .map(b -> new Pair<>(b, extraMessage(endTime - startTime, security)));
-            if (result.isPresent()) {
-                removeMessages();
-            }
-            return result;
-        }
+        Optional<PrintableBlock> result = Optional.of(candidate).filter(blockChain::add);
+        result.ifPresent(_p -> removeMessages());
+        return result.map(b -> {
+            ChosenKeysNewLinePrinter<String> printer = new ChosenKeysNewLinePrinter<>(
+                    new OrderedMapPrinter(
+                            "Block:", extraMessage(endTime - startTime, security)
+                    )
+            );
+            b.printTo(printer);
+            return printer;
+        });
     }
 
-    synchronized
     public void sendMessage(String message) {
-        messages.add(message);
+        synchronized (messages) {
+            messages.add(message);
+        }
     }
 
     private void removeMessages() {
-        messages = new ArrayList<>();
+        synchronized (messages) {
+            messages.clear();
+        }
     }
 
     private String getPayload() {
-        if (messages.isEmpty()) {
-            return "no messages";
+        synchronized (messages) {
+            if (messages.isEmpty()) {
+                return "No transactions";
+            }
+            return String.join("\n", messages);
         }
-        return "\n" + String.join("\n", messages);
     }
 
-    public int blocksCount() {
-        return blockChain.blocksCount();
+    public boolean acceptsBlocks() {
+        return blockChain.blocksCount() < 15;
     }
 
     private String extraMessage(long creationTime, int securityBefore) {

@@ -1,5 +1,5 @@
 package blockchain.printers;
 
 public interface Printable {
-    void printTo(Printer<?> printer);
+    void printTo(MapPrinter<?> mapPrinter);
 }

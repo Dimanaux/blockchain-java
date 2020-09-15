@@ -1,7 +1,7 @@
 package blockchain.blocks;
 
 import blockchain.util.Sha256;
-import blockchain.printers.Printer;
+import blockchain.printers.MapPrinter;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -56,7 +56,7 @@ public class HardToMineBlock implements PrintableBlock {
     }
 
     @Override
-    public void printTo(Printer<?> printer) {
+    public void printTo(MapPrinter<?> printer) {
         block.printTo(printer);
         printer.put("Magic number", magicNumber);
         printer.put("Hash of the block", hash());

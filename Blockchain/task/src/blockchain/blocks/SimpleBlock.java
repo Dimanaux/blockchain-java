@@ -1,7 +1,7 @@
 package blockchain.blocks;
 
+import blockchain.printers.MapPrinter;
 import blockchain.util.Sha256;
-import blockchain.printers.Printer;
 
 public class SimpleBlock implements PrintableBlock {
     private final long id;
@@ -15,7 +15,7 @@ public class SimpleBlock implements PrintableBlock {
     }
 
     @Override
-    public void printTo(Printer<?> printer) {
+    public void printTo(MapPrinter<?> printer) {
         printer.put("Id", id);
         printer.put("Hash of the previous block", previousBlockHash);
         printer.put("Hash of the block", hash());
@@ -32,5 +32,9 @@ public class SimpleBlock implements PrintableBlock {
     @Override
     public boolean isNextFor(Block other) {
         return this.previousBlockHash.equals(other.hash());
+    }
+
+    public boolean isNextFor(SimpleBlock other) {
+        return this.id > other.id && this.previousBlockHash.equals(other.hash());
     }
 }

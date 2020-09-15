@@ -522,9 +522,6 @@ files:
 - name: src/blockchain/blocks/CarrierBlock.java
   visible: true
   learner_created: true
-- name: src/blockchain/Messenger.java
-  visible: true
-  learner_created: true
 - name: src/blockchain/printers/Printer.java
   visible: true
   learner_created: true
@@ -540,6 +537,96 @@ files:
 - name: src/blockchain/blocks/PrintableBlock.java
   visible: true
   learner_created: true
+- name: test/blockchain/blocks/HardToMineBlockTest.java
+  visible: true
+  text: |-
+    package blockchain.blocks;
+
+    import org.junit.Test;
+
+    import java.util.Optional;
+
+    import static org.junit.Assert.assertFalse;
+    import static org.junit.Assert.assertTrue;
+
+    public class HardToMineBlockTest {
+        SimpleBlock previous = new SimpleBlock(1L, "0", System.currentTimeMillis());
+        SimpleBlock next = new SimpleBlock(2L, previous.hash(), System.currentTimeMillis());
+
+        @Test
+        public void isPreviousOf() {
+            Optional<HardToMineBlock> hardToMineBlock = HardToMineBlock.create(next, 0, 23);
+            assertTrue(hardToMineBlock.isPresent());
+            assertTrue(hardToMineBlock.get().isNextFor(previous));
+            assertFalse(previous.isNextFor(hardToMineBlock.get()));
+        }
+    }
+  learner_created: false
+- name: test/blockchain/blocks/CarrierBlockTest.java
+  visible: true
+  text: |
+    package blockchain.blocks;
+
+    import org.junit.Test;
+
+    import static org.junit.Assert.assertFalse;
+    import static org.junit.Assert.assertTrue;
+
+    public class CarrierBlockTest {
+        SimpleBlock previous = new SimpleBlock(1L, "0", System.currentTimeMillis());
+        SimpleBlock next = new SimpleBlock(2L, previous.hash(), System.currentTimeMillis());
+
+        @Test
+        public void isPreviousOf() {
+            CarrierBlock carrierBlock = new CarrierBlock(next, "Hello");
+            assertTrue(carrierBlock.isNextFor(previous));
+            assertFalse(previous.isNextFor(carrierBlock));
+        }
+    }
+  learner_created: false
+- name: test/blockchain/blocks/SimpleBlockTest.java
+  visible: true
+  text: |
+    package blockchain.blocks;
+
+    import org.junit.Test;
+
+    import static org.junit.Assert.assertFalse;
+    import static org.junit.Assert.assertTrue;
+
+    public class SimpleBlockTest {
+        SimpleBlock previous = new SimpleBlock(1L, "0", System.currentTimeMillis());
+        SimpleBlock next = new SimpleBlock(2L, previous.hash(), System.currentTimeMillis());
+
+        @Test
+        public void isPreviousOf() {
+            assertTrue(next.isNextFor(previous));
+            assertFalse(previous.isNextFor(next));
+        }
+    }
+  learner_created: false
+- name: src/blockchain/util/ZipWithNext.java
+  visible: true
+  learner_created: true
+- name: test/blockchain/util/ZipWithNextTest.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/blocks/ZeroBlock.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/messengers/Messenger.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/messengers/SimpleMessenger.java
+  visible: true
+  learner_created: true
+- name: src/blockchain/messengers/EncryptedMessenger.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/50/stages/275/implement
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/50/stages/275/implement">JetBrains
+    Academy</a>
+  time: Sun, 13 Sep 2020 11:05:24 UTC
+record: 5

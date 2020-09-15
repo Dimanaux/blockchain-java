@@ -1,14 +1,10 @@
 package blockchain;
 
-import blockchain.blocks.PrintableBlock;
-import blockchain.printers.ChosenKeysNewLinePrinter;
-import blockchain.printers.OrderedPrinter;
-import blockchain.printers.Printer;
-import blockchain.util.Pair;
+import blockchain.printers.MapPrinter;
 
 import java.util.Optional;
 
-public class Miner implements Runnable {
+public class Miner {
     private final BlockFactory blockFactory;
     private final int id;
 
@@ -17,21 +13,33 @@ public class Miner implements Runnable {
         this.id = id;
     }
 
-    @Override
-    public void run() {
-        while (blockFactory.blocksCount() < 5) {
-            Optional<Pair<PrintableBlock, String>> block = blockFactory.createBlock();
+    public void mine() {
+        while (blockFactory.acceptsBlocks()) {
+            Optional<MapPrinter<String>> printer = blockFactory.createBlock(blockTransaction());
             synchronized (this.getClass()) {
-                block.ifPresent(b -> logBlock(b.first, b.second));
+                printer.ifPresent(p -> {
+                    System.out.println(p.flush());
+                    System.out.println();
+                });
             }
         }
     }
 
-    private void logBlock(PrintableBlock block, String message) {
-        Printer<String> printer = new ChosenKeysNewLinePrinter<>(
-                new OrderedPrinter("Block:\nCreated by miner # " + id, message)
-        );
-        block.printTo(printer);
-        System.out.println(printer.flush());
+    public void sendMoney() {
+        while (blockFactory.acceptsBlocks()) {
+            blockFactory.sendMessage("miner" + id + " sent 10 VC to miner 2");
+            sleep();
+        }
+    }
+
+    private static void sleep() {
+        try {
+            Thread.sleep((long) (Math.random() * 1000));
+        } catch (InterruptedException ignored) {
+        }
+    }
+
+    private String blockTransaction() {
+        return String.format("miner%d\nminer%d gets 100 VC", id, id);
     }
 }

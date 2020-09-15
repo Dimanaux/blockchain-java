@@ -1,9 +1,10 @@
 package blockchain;
 
 import blockchain.blocks.Block;
+import blockchain.blocks.ZeroBlock;
+import blockchain.util.ZipWithNext;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class BlockChain {
@@ -11,10 +12,11 @@ public class BlockChain {
     private final Object lock = new Object();
     private final AtomicInteger security = new AtomicInteger(0);
     private long lastBlockAddedAt = 0L;
+    private final Block zeroBlock = new ZeroBlock();
 
     public boolean add(Block block) {
         synchronized (lock) {
-            if (isValid(block)) {
+            if (isValid() && isValid(block)) {
                 adjustSecurity();
                 lastBlockAddedAt = System.currentTimeMillis();
                 return blocks.add(block);
@@ -30,37 +32,40 @@ public class BlockChain {
             return;
         }
         long lastBlockCreationTime = System.currentTimeMillis() - lastBlockAddedAt;
-        if (lastBlockCreationTime > 60_000) {
+        if (lastBlockCreationTime > 300) {
             security.decrementAndGet();
-        } else if (lastBlockCreationTime < 10_000) {
+        } else if (lastBlockCreationTime < 50) {
             security.incrementAndGet();
         }
     }
 
-    private boolean isValid(Block block) {
-        Iterator<Block> iterator = blocks.iterator();
-        if (!iterator.hasNext()) {
-            return true;
-        }
-        Block previousBlock = iterator.next();
-        while (iterator.hasNext()) {
-            Block currentBlock = iterator.next();
+    private boolean isValid() {
+        for (var blockPair : new ZipWithNext<>(blocks)) {
+            Block previousBlock = blockPair.first;
+            Block currentBlock = blockPair.second;
             if (!currentBlock.isNextFor(previousBlock)) {
                 return false;
             }
-            previousBlock = currentBlock;
         }
-        return block.isNextFor(previousBlock);
+        return true;
+    }
+
+    private boolean isValid(Block block) {
+        return block.isNextFor(lastBlock());
+    }
+
+    private Block lastBlock() {
+        synchronized (lock) {
+            if (blocks.size() > 0) {
+                return blocks.get(blocks.size() - 1);
+            } else {
+                return zeroBlock;
+            }
+        }
     }
 
     public String lastBlockHash() {
-        synchronized (lock) {
-            if (blocks.size() > 0) {
-                return blocks.get(blocks.size() - 1).hash();
-            } else {
-                return "0";
-            }
-        }
+        return lastBlock().hash();
     }
 
     public int blocksCount() {

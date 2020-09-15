@@ -4,15 +4,15 @@ import java.util.List;
 
 import static java.util.Arrays.asList;
 
-public class ChosenKeysNewLinePrinter<T> implements Printer<T> {
+public class ChosenKeysNewLinePrinter<T> implements MapPrinter<T> {
     private static final List<String> chosenKeys = asList(
             "Hash of the previous block",
-            "Hash of the block"
+            "Hash of the block", "Block data"
     );
 
-    private final Printer<T> printer;
+    private final MapPrinter<T> printer;
 
-    public ChosenKeysNewLinePrinter(Printer<T> printer) {
+    public ChosenKeysNewLinePrinter(MapPrinter<T> printer) {
         this.printer = printer;
     }
 

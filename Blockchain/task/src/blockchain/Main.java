@@ -1,5 +1,7 @@
 package blockchain;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -10,19 +12,20 @@ public class Main {
         BlockFactory blockFactory = new BlockFactory(blockChain);
         ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-        ExecutorService daemons = Executors.newFixedThreadPool(4);
-
-        for (int i = 0; i < 4; i++) {
-            executorService.submit(new Miner(i, blockFactory));
+        List<Miner> miners = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            miners.add(new Miner(i, blockFactory));
         }
-        for (int i = 0; i < 4; i++) {
-            daemons.submit(new Messenger(blockFactory, "User #" + i));
+
+        for (int i = 0; i < 2; i++) {
+            executorService.submit(miners.get(i)::sendMoney);
+        }
+
+        for (int i = 0; i < 3; i++) {
+            executorService.submit(miners.get(i)::mine);
         }
 
         executorService.shutdown();
-        executorService.awaitTermination(10, TimeUnit.SECONDS);
-        daemons.shutdown();
-        daemons.awaitTermination(10, TimeUnit.MILLISECONDS);
-        daemons.shutdownNow();
+        executorService.awaitTermination(13, TimeUnit.SECONDS);
     }
 }

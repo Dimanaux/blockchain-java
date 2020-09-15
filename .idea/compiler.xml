@@ -5,9 +5,23 @@
       <module name="blockchain-java-Blockchain-task" target="1.8" />
       <module name="blockchain-java-Blockchain-task_main" target="1.8" />
       <module name="blockchain-java-Blockchain-task_test" target="1.8" />
+      <module name="blockchain-java.Blockchain.util" target="11" />
+      <module name="blockchain-java.Blockchain.util.main" target="11" />
+      <module name="blockchain-java.Blockchain.util.main~1" target="11" />
+      <module name="blockchain-java.Blockchain.util.test" target="11" />
+      <module name="blockchain-java.Blockchain.util.test~1" target="11" />
       <module name="Blockchain-util" target="1.8" />
       <module name="Blockchain-util_main" target="1.8" />
       <module name="Blockchain-util_test" target="1.8" />
+      <module name="Blockchain.Problems-Return_empty_string_when_argument_is_null" target="11" />
+      <module name="Blockchain.Problems-Return_empty_string_when_argument_is_null.main" target="11" />
+      <module name="Blockchain.Problems-Return_empty_string_when_argument_is_null.test" target="11" />
+      <module name="Blockchain.Problems-Sherlock_Holmes_and_the_mystery_of_anagrams" target="11" />
+      <module name="Blockchain.Problems-Sherlock_Holmes_and_the_mystery_of_anagrams.main" target="11" />
+      <module name="Blockchain.Problems-Sherlock_Holmes_and_the_mystery_of_anagrams.test" target="11" />
+      <module name="task.Blockchain.Blockchain-task" target="11" />
+      <module name="task.Blockchain.Blockchain-task.main" target="11" />
+      <module name="task.Blockchain.Blockchain-task.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
