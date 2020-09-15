@@ -32,9 +32,9 @@ public class BlockChain {
             return;
         }
         long lastBlockCreationTime = System.currentTimeMillis() - lastBlockAddedAt;
-        if (lastBlockCreationTime > 300) {
+        if (lastBlockCreationTime > 60_000) {
             security.decrementAndGet();
-        } else if (lastBlockCreationTime < 50) {
+        } else if (lastBlockCreationTime < 10_000) {
             security.incrementAndGet();
         }
     }
